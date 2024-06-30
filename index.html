@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<!--  Title of website -->
+  
+    <title>Voter Registration DApp</title>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.0/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Voter Registration DApp</h1>
+
+<!--   inputs  -->
+  
+    <div>
+        <h2>Register Voter</h2>
+        <input type="text" id="voterAddress" placeholder="Voter Address">
+        <input type="text" id="voterName" placeholder="Voter Name">
+        <input type="number" id="voterAge" placeholder="Voter Age">
+        <input type="text" id="voterPlace" placeholder="Voter Place">
+        <input type="text" id="voterPName" placeholder="Party Name">
+        <button onclick="registerVoter()">Register</button>
+    </div>
+
+<!--   next section to check the eligbility of voter -->
+  
+    <div>
+        <h2>Check Voter Eligibility</h2>
+        <input type="text" id="checkAddress" placeholder="Voter Address">
+        <button onclick="checkEligibility()">Check Eligibility</button>
+        <p id="eligibilityResult"></p>
+    </div>
+
+<!--   to change the voter place -->
+  
+    <div>
+        <h2>Update Voter Place</h2>
+        <input type="text" id="updateAddress" placeholder="Voter Address">
+        <input type="text" id="newPlace" placeholder="New Place">
+        <button onclick="updatePlace()">Update Place</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
